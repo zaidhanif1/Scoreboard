@@ -3,48 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Scoreboard</title>
+    
     <link rel="stylesheet" href="index.css">
 </head>
-
 <body>
     <div class="container">
-        <div>
-            <h3>HOME</h3>
-        </div>
-        <div>
-            <h3>GUEST</h3>
-        </div>
-        
-
-        </div> <!--end div container--> 
+        <div class="scoreboard">
+            <div><h3>HOME</h3></div>
+            <div><h3>GUEST</h3></div>
+        </div> <!--end scoreboard-->
 
         <div class="scoreboard">
-            <div> <h3 id="leftScore">0</h3></div>
-          <div><h3>0</h3></div>
+            <div><h3 id="leftScore">0</h3></div>
+            <div><h3 id="rightScore">0</h3></div>
         </div>
 
+        <div class="buttons">
+            <div class="left">
+                <button onclick="add1left()" class="button1left">+1</button>
+                <button onclick="add2left()" class="button2left">+2 </button>
+                <button onclick="add3left()" class="button3left">+3</button>
+            </div>
+            <div class="right">
+                <button onclick="add1right()" class="button1right">+1</button>
+                <button onclick="add2right()" class="button2right">+2</button>
+                <button onclick="add3right()" class="button3right">+3</button>
 
-
-<div class="buttons">
-<div class="left">
-<button onclick="add1()">+1</button>
-<button onclick="add2()">+2</button>
-<button onclick="add3()">+3</button>
-</div>
-<div class="right">
-<button onclick="add1()">+1</button>
-<button onclick="add2()">+2</button>
-<button onclick="add3()">+3</button>
-</div>
-
-
-
-</div>
-
-
+               
+            </div> <!---end buttons -->
+             <div class="reset">
+                    <button onclick="reset()">RESET</button>
+                    
+                </div>
+        </div>
+    </div> <!--end container-->
 
     <script src="index.js"></script>
 </body>
 </html>
-
